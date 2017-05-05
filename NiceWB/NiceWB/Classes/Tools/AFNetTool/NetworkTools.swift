@@ -26,17 +26,20 @@ class NetworkTools: AFHTTPSessionManager {
 
 // MARK:- 请求首页信息
 extension NetworkTools{
-    func loadHomeViewData(finshed:@escaping (_ result : [String : AnyObject]?,_ error : Error?)->()){
+    func loadHomeViewData(since_id : Int,max_id : Int, finshed:@escaping (_ result : [[String : AnyObject]]?,_ error : Error?)->()){
         let url = "https://api.weibo.com/2/statuses/home_timeline.json"
-        let parameter = ["access_token" : UserAccountViewModel.shareInstance.account?.access_token]
+        let access_token = UserAccountViewModel.shareInstance.account?.access_token
+        let parameter = ["access_token" : access_token,
+                         "since_id" : "\(since_id)",
+                         "max_id" : "\(max_id)"]
         request(requestType: .GET, url: url, parameters: parameter as [String : AnyObject]?) { (result, error) in
             
             guard let resultDic = result as? [String : AnyObject] else{
                 finshed(nil, error)
                 return
             }
-            
-            finshed(resultDic, error)
+            let resultArray = resultDic["statuses"]
+            finshed(resultArray as! [[String : AnyObject]]?, error)
         }
     }
 }
