@@ -13,5 +13,6 @@
 #import "AFNetworking.h"  //数网络请求
 #import "UIImageView+WebCache.h" //网络图片加载
 #import "MJRefresh.h" //下拉刷新
+#import "SnapKit.h"
 
 #endif /* BridgeFile_h */

@@ -32,6 +32,9 @@ extension MainviewController{
 // MARK:- 点击事件
 extension MainviewController{
     func composeClick(){
-        print("woyaodaren")
+        let composeVc = ComposeViewController()
+        let composeNav = UINavigationController(rootViewController: composeVc)
+        present(composeNav, animated: true, completion: nil)
+        
     }
 }

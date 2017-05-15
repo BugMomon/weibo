@@ -14,6 +14,7 @@ class HomeViewController: BaseViewController {
     lazy var titleBtn : Titlebutton = Titlebutton()
     lazy var models : [HomeViewModel] = [HomeViewModel]() // 创建一个存储模型的数组
     var i : Int = 0
+    let tip = UILabel()
     
     //用[weak self] 解决了循环引用
     lazy var titleAnimator :TitleViewAnimator = TitleViewAnimator{[weak self](isPresented) in
@@ -29,6 +30,8 @@ class HomeViewController: BaseViewController {
         if !islogin {return}
         //设置首页里面的导航栏按钮
         setupHomeNavigationItems()
+        //添加提示label
+        setupTipLabel()
         
         //请求数据
 //        loadRequest()
@@ -146,6 +149,11 @@ extension HomeViewController{
                 //结束刷新
                 self.tableView.mj_header.endRefreshing()
                 self.tableView.mj_footer.endRefreshing()
+                
+                //展示更新提示条目
+                
+                let weiboCount = resultArray.count
+                self.showTipLabel(count: weiboCount)
             })
         }
     }
@@ -161,11 +169,38 @@ extension HomeViewController{
             UIBarButtonItem(ImageName: "navigationbar_friendattention")
          navigationItem.rightBarButtonItem =
             UIBarButtonItem(ImageName: "navigationbar_pop")
-        
         //设置title按钮
         navigationItem.titleView = titleBtn
         titleBtn.setTitle(UserAccountViewModel.shareInstance.account?.screen_name, for: .normal)
         titleBtn.addTarget(self, action:#selector(titleBtnClick(btn:)), for: .touchUpInside)
+    }
+    
+    //添加label提示
+    func setupTipLabel() {
+        
+        navigationController?.navigationBar.insertSubview(tip, belowSubview: (navigationController?.navigationBar)!)
+        tip.frame = CGRect(x: 0, y: 10, width: self.view.bounds.width, height: 32)
+        tip.backgroundColor = UIColor.orange
+        tip.textColor = UIColor.white
+        tip.textAlignment = .center
+        tip.font = UIFont.boldSystemFont(ofSize: 13)
+        tip.isHidden = true
+    }
+    
+    //展示
+    func showTipLabel(count : Int){
+        self.tip.text = count == 0 ? ("没有新数据") : ("更新了\(count)条微博")
+        UIView.animate(withDuration: 1.0, animations: {
+            self.tip.isHidden = false
+            self.tip.frame.origin.y = 44
+        }, completion: { (j) in
+            UIView.animate(withDuration: 1.0, delay: 1.5, options: .curveEaseInOut, animations: {
+                self.tip.frame.origin.y = 10
+            }, completion: { (j) in
+                self.tip.isHidden = true
+            })
+        })
+        
     }
 }
 
