@@ -48,7 +48,6 @@
 		9A3EC0CF1EC99B68004613D4 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3EC0CD1EC99B68004613D4 /* ComposeViewController.swift */; };
 		9A3EC0D01EC99B68004613D4 /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3EC0CE1EC99B68004613D4 /* ComposeViewController.xib */; };
 		9A3EC0D21EC99BBF004613D4 /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3EC0D11EC99BBF004613D4 /* ComposeTextView.swift */; };
-		9A3EC0D41EC99BF2004613D4 /* ComposeTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3EC0D31EC99BF2004613D4 /* ComposeTextView.xib */; };
 		9A4AE8D61E8368390019454C /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4AE8D41E8368390019454C /* Message.storyboard */; };
 		9A4AE8D81E8368570019454C /* Nill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4AE8D71E8368570019454C /* Nill.storyboard */; };
 		9A4AE8DB1E8368AF0019454C /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4AE8D91E8368AF0019454C /* Discover.storyboard */; };
@@ -121,6 +120,9 @@
 		9A8C6F751E8CF77F004E6711 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8C6F741E8CF77F004E6711 /* NetworkTools.swift */; };
 		9A90ED751E8E394500BF1CD8 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A90ED741E8E394500BF1CD8 /* UserAccount.swift */; };
 		9A9585701E850532005DBF42 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A95856F1E850532005DBF42 /* UIBarButtonItem+Extension.swift */; };
+		9A9ED8481ECBE3B300DA1FB2 /* ComposePicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9ED8471ECBE3B300DA1FB2 /* ComposePicCollectionView.swift */; };
+		9A9ED84B1ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9ED8491ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.swift */; };
+		9A9ED84C1ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9ED84A1ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.xib */; };
 		9ACC86D01E8A276D004A68F4 /* TitleViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC86CF1E8A276D004A68F4 /* TitleViewAnimator.swift */; };
 		9AD9C60C1E88BCC3007F3F9E /* Titlebutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD9C60B1E88BCC3007F3F9E /* Titlebutton.swift */; };
 		9AD9C6101E88EEF1007F3F9E /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD9C60E1E88EEF1007F3F9E /* TitleViewController.swift */; };
@@ -173,7 +175,6 @@
 		9A3EC0CD1EC99B68004613D4 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		9A3EC0CE1EC99B68004613D4 /* ComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
 		9A3EC0D11EC99BBF004613D4 /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
-		9A3EC0D31EC99BF2004613D4 /* ComposeTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeTextView.xib; sourceTree = "<group>"; };
 		9A4AE8D51E8368390019454C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
 		9A4AE8D71E8368570019454C /* Nill.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Nill.storyboard; sourceTree = "<group>"; };
 		9A4AE8DA1E8368AF0019454C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
@@ -296,6 +297,9 @@
 		9A8C6F741E8CF77F004E6711 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		9A90ED741E8E394500BF1CD8 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		9A95856F1E850532005DBF42 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		9A9ED8471ECBE3B300DA1FB2 /* ComposePicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposePicCollectionView.swift; sourceTree = "<group>"; };
+		9A9ED8491ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposePicCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A9ED84A1ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposePicCollectionViewCell.xib; sourceTree = "<group>"; };
 		9ACC86CF1E8A276D004A68F4 /* TitleViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewAnimator.swift; sourceTree = "<group>"; };
 		9AD9C60B1E88BCC3007F3F9E /* Titlebutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Titlebutton.swift; path = Category/Titlebutton.swift; sourceTree = "<group>"; };
 		9AD9C60E1E88EEF1007F3F9E /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
@@ -329,9 +333,9 @@
 		9A3EC07E1EC99065004613D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A9ED8461ECBE3AA00DA1FB2 /* PicPickerView */,
 				9A3EC07F1EC99082004613D4 /* ComposeTitleView.swift */,
 				9A3EC0D11EC99BBF004613D4 /* ComposeTextView.swift */,
-				9A3EC0D31EC99BF2004613D4 /* ComposeTextView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -722,6 +726,16 @@
 			path = AFNetTool;
 			sourceTree = "<group>";
 		};
+		9A9ED8461ECBE3AA00DA1FB2 /* PicPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				9A9ED8471ECBE3B300DA1FB2 /* ComposePicCollectionView.swift */,
+				9A9ED8491ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.swift */,
+				9A9ED84A1ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.xib */,
+			);
+			path = PicPickerView;
+			sourceTree = "<group>";
+		};
 		9AD9C60D1E88EEBF007F3F9E /* TitleViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -805,13 +819,13 @@
 				9A4AE8D81E8368570019454C /* Nill.storyboard in Resources */,
 				9A8C6F471E8CA427004E6711 /* AccessTokenViewController.xib in Resources */,
 				9AD9C6111E88EEF1007F3F9E /* TitleViewController.xib in Resources */,
+				9A9ED84C1ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.xib in Resources */,
 				9A829EC61E827DF500CD18C2 /* Main.storyboard in Resources */,
 				9A83BE4D1E9480A800EB902E /* WelcomeViewController.xib in Resources */,
 				9A3EC0C31EC992ED004613D4 /* Info.plist in Resources */,
 				9A1467881E83D4DF00253263 /* VisitorView.xib in Resources */,
 				9A73E31E1EA717B20052A8A8 /* MJRefresh.bundle in Resources */,
 				9A4AE8D61E8368390019454C /* Message.storyboard in Resources */,
-				9A3EC0D41EC99BF2004613D4 /* ComposeTextView.xib in Resources */,
 				9A4AE8DD1E8368CB0019454C /* ProFile.storyboard in Resources */,
 				9A829EE91E8284B900CD18C2 /* Home.storyboard in Resources */,
 				9A4AE8DB1E8368AF0019454C /* Discover.storyboard in Resources */,
@@ -907,6 +921,7 @@
 				9A73E31C1EA717B20052A8A8 /* MJRefreshNormalHeader.m in Sources */,
 				9A83BEAF1E94D3F100EB902E /* SDWebImageCompat.m in Sources */,
 				9A73E3191EA717B20052A8A8 /* MJRefreshBackNormalFooter.m in Sources */,
+				9A9ED8481ECBE3B300DA1FB2 /* ComposePicCollectionView.swift in Sources */,
 				9A4AE8F11E83D4790019454C /* BaseViewController.swift in Sources */,
 				9A84E6531E9732CC00248CCA /* HomeStatuses.swift in Sources */,
 				9A06355E1E9CBBBF00B3F73F /* HomeCollectionView.swift in Sources */,
@@ -931,6 +946,7 @@
 				9A3EC0AF1EC992ED004613D4 /* ConstraintLayoutGuide.swift in Sources */,
 				9A3EC0BF1EC992ED004613D4 /* ConstraintView+Extensions.swift in Sources */,
 				9A8C6F6F1E8CE241004E6711 /* AFURLResponseSerialization.m in Sources */,
+				9A9ED84B1ECBEF1B00DA1FB2 /* ComposePicCollectionViewCell.swift in Sources */,
 				9A4AE8E91E8374E50019454C /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
